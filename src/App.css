@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    background-color: #F9F9FB;
+    box-shadow: 2px 2px 5px #e1e0e0;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 50px;
+}
+ul{
+    list-style-type: none;   
+}
+.nav__links{
+    /* list-style: none; */
+}
+.nav__links li {
+    padding: 0 10px;
+    display: inline-block;
+}
+.nav__links li a{
+    text-decoration: none;
+    color: gray;
+    /* font-weight: bold; */
+    font-size: 0.8rem;
+}
+.logo{
+    width: 100px;
+    margin-right: auto;
+}
+.container-1{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.img-logo{
+    width: 50px;
+    border-radius: 5px;
+}
+.container-1 div{
+    display: inline-block;
+    padding: 0 5px;
+    align-self: center;
+    font-size: 10px;
+    /* margin: 0 30px; */
+}
+.container-1 div button{
+    font-size: 10px;
+}
+.container-1 :nth-of-type(3) {
+    margin-right: auto;
+    color: #da572f;
+}
+.container-1 :nth-of-type(2){
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.container-1 div button{
+    color: #7375D0;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.container-1 div button:active {
+    box-shadow: 2px 2px 5px #7375D0;
+}
+.container-1 div .btn-top-1{
+    background-color: #7375D0;
+    color: #fff;
+    border-radius: 50px;
+}
+.btn-top-1 :hover{
+    color: #000;
+    background-color: white ;
+}
+.container-1 div .btn-top-2{
+    background-color: #F9F9FB;
+    border-radius: 50px;
+}
+.guide{
+    margin: 0 30%;
+    padding-bottom: 15px;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-2{
+    position: relative;
+}
+.container-2 img{
+    width: 100%;
+}
+.container-2 p{
+    font-size: 14px;
+}
+.container-2 .bg{
+    position: absolute;
+    z-index: 2;
+    opacity: 0.1;
+}
+.container-2 .fg{
+    position: absolute;
+    z-index: 1;
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    color: rgb(111, 109, 109);
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.container-2 .fg .btns{
+    margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-2 .fg .btn-1{
+    background-color: #7375D0;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container-2 .fg .btn-2{
+    color: #7375D0; 
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .container-2 .fg .btn-2:hover{
+    box-shadow: 2px 2px 5px #7375D0;
+} */
+.container-2 .fg .or{
+    font-size: 10px;
+    margin: 0 10px;
+    color: grey;
 }
